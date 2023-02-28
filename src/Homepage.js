@@ -1,17 +1,8 @@
 import React from 'react';
 import Button from 'uicomponents/Button';
+import { Link } from 'react-router-dom';
 
 const Homepage = ({ children }) => {
-
-  // create a homepage component that has a heading and description
-  // about module federation with webpack 5
-  // and a button that says "Sign in" that take you to a login page
-  // return (
-  // <>
-  //   <button>{children}</button>
-  //   <Button>Sign in</Button>
-  // </>
-  // );
 
   return (
     <>
@@ -20,7 +11,9 @@ const Homepage = ({ children }) => {
         Module Federation is a new feature in Webpack 5 that allows you to
         dynamically load code from other webpack bundles at runtime.
       </p>
-      <Button>Sign in</Button>
+      <Button onClick={() => alert('Button component from federated ui components library')}>Click me</Button>
+      <br />
+      <Link to="/signup">Signup</Link>
     </>
   );
 };
