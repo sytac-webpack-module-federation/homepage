@@ -6,7 +6,7 @@ import { createHashRouter, RouterProvider } from 'react-router-dom';
 const App = () => {
     const router = createHashRouter([
         {
-          path: "/",
+          path: "*",
           element: <Homepage />,
         },
       ]);
